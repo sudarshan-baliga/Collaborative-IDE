@@ -1,0 +1,18 @@
+
+
+.CodeMirror {
+	border: 1px solid black;
+	height: 600px;
+	width: 800px;
+	top:50px;
+	font-size: 20px;
+	margin: 0 auto;
+}
+#languages{
+	position:absolute;
+	margin: 0 auto;
+	left:43%;
+	top:38px;
+	width:200px;
+	text-align: center;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IDE</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <script src="codemirror/codemirror.js"></script>
+        <script src="codemirror/python.js"></script>
+        <script src="codemirror/clike.js"></script>
+        <link href="codemirror/codemirror.css" rel="stylesheet" />
+        <link href="codemirror/monokai.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="textarea"></div>
+        <select id = "languages" onchange = "language()">
+            <option name ="c++" value = "text/x-c++src">C++</option>
+            <option name = "c" value = "text/x-csrc">C</option>
+            <option name ="python" value = "python">Python</option>
+        </select>
+    </body>
+    <script src="/client.js"></script>
+</html>
