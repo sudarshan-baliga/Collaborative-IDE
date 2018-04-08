@@ -9,13 +9,12 @@ var cm = CodeMirror(element,{
     lineNumbers: true,
     styleActiveLine: true,
     autoCloseBrackets: true,
-    theme:"monokai"
+   
 });
 cm.on('change',function(i,change){
     if(front[0] != change.from && end[0] != change.to && gotcodesflag == 1) // gotcodeflag to make sure that it is  not initial data which we recieve
      {
          socket.emit("change",change); 
-         console.log(change);
     } 
     else{
         front.shift();
@@ -54,5 +53,20 @@ language = function(){
 
 languageselect.addEventListener("change",function(){
     socket.emit("selectlanguage",languageselect.value);
-    console.log("lll");
 })
+
+//initialize select language
+var elem = document.querySelector('select');
+  var instance = M.FormSelect.init(elem);
+
+//dark theme
+dark =$('#dark');
+darkFlag = 0;
+dark.change(function(){
+    if($(this).is(":checked"))
+        cm.setOption('theme',"material");
+    else{
+        cm.setOption('theme',"default");
+    }
+})
+ 

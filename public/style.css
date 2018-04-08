@@ -1,18 +1,127 @@
 
+@media (min-width:480px){
+	.CodeMirror {
+		border: 1px solid black;
+		height: 615px;
+		width: 800px;
+		top:35px;
+		font-size: 20px;
+		margin: 0 auto;
+	}
+	
+	.editor-top{
+		position: relative;
+		top: 50px;
+		margin: 0 auto;;
+		width : 800px;
+		height: 50px;
+	
+	} 
+	
+	.select{
+		position:absolute;
+		margin: 0 auto;
+		left:43%;
+		top:5px;
+		width:200px;
+		text-align: center;
+		padding: 0px;
+	}
+	
+	.editor-bottom{
+		position: relative;
+		top: 650px;
+		margin: 0 auto;;
+		width : 800px;
+		height: 65px;
+		background-color: #ddd;
+	} 
+	
+	#textarea{
+		height: 0px;
+	}
+	
+	a.submit{
+		position: relative;
+		left: 350px;
+		top: 10px;
+	}
+	
+	.selectLang{
+		position: absolute;
+		top:3px;
+		left: 200px;
+		color: teal;
+	
+	}
+	.darkLable{
+		position: relative;
+		top:15px;
+		left: 500px;
+	}
+	}
 
+@media (min-width:1020px){
+	
 .CodeMirror {
 	border: 1px solid black;
-	height: 600px;
+	height: 615px;
 	width: 800px;
-	top:50px;
+	top:35px;
 	font-size: 20px;
 	margin: 0 auto;
 }
-#languages{
+
+.editor-top{
+	position: relative;
+	top: 50px;
+	margin: 0 auto;;
+	width : 800px;
+	height: 50px;
+
+} 
+
+.select{
 	position:absolute;
 	margin: 0 auto;
 	left:43%;
-	top:38px;
+	top:5px;
 	width:200px;
 	text-align: center;
+	padding: 0px;
 }
+
+.editor-bottom{
+	position: relative;
+	top: 650px;
+	margin: 0 auto;;
+	width : 800px;
+	height: 65px;
+	
+} 
+
+#textarea{
+	height: 0px;
+}
+
+a.submit{
+	position: relative;
+	left: 350px;
+	top: 10px;
+}
+
+.selectLang{
+	position: absolute;
+	top:3px;
+	left : 400px;
+	color: teal
+}
+.darkLable{
+	position: relative;
+	top:15px;
+	left: 500px;
+}
+	}
+	
+
+

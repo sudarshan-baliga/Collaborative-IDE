@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>IDE</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
-        <script src="codemirror/codemirror.js"></script>
-        <script src="codemirror/python.js"></script>
-        <script src="codemirror/clike.js"></script>
-        <link href="codemirror/codemirror.css" rel="stylesheet" />
-        <link href="codemirror/monokai.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div id="textarea"></div>
-        <select id = "languages" onchange = "language()">
-            <option name ="c++" value = "text/x-c++src">C++</option>
-            <option name = "c" value = "text/x-csrc">C</option>
-            <option name ="python" value = "python">Python</option>
-        </select>
-    </body>
-    <script src="/client.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <title>IDE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script src="codemirror/codemirror.js"></script>
+    <script src="codemirror/python.js"></script>
+    <script src="codemirror/clike.js"></script>
+    <link href="codemirror/codemirror.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="codemirror/material.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <div class="editor-top  red darken-1 ">
+    </div>
+    <div class="lan">
+        <p class="selectLang ">Select a language
+            <p></p>
+            <div class="select">
+                <select id="languages" onchange="language()">
+                    <option name="c++" value="text/x-c++src">C++</option>
+                    <option name="c" value="text/x-csrc">C</option>
+                    <option name="python" value="python" selected="selected">Python</option>
+                </select>
+            </div>
+    </div>
+
+    <div id="textarea"></div>
+    <div class="editor-bottom red darken-1">
+        <a class=" submit waves-effect waves-light btn teal ">Submit</a>
+        <label class="darkLable">
+            <input type="checkbox" id="dark">
+            <span class = "white-text">DarkTheme</span>
+        </label>
+    </div>
+</body>
+<script src="/client.js"></script>
+
 </html>
